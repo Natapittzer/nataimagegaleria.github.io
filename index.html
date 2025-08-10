@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📸 Galeria de Imagens</h1>
+            <p>Guarde suas imagens favoritas com legendas personalizadas</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <div class="upload-icon">📁</div>
+                    <p>Clique aqui ou arraste imagens para adicionar</p>
+                    <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+            <!-- As imagens serão adicionadas aqui dinamicamente -->
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <div class="empty-icon">🖼️</div>
+            <h3>Sua galeria está vazia</h3>
+            <p>Adicione algumas imagens para começar!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
